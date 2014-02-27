@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_Name"
+            android:layout_marginTop="144dp"
+            android:width="200dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/et_Pass"
+            android:layout_below="@+id/et_Name" android:layout_alignLeft="@+id/et_Name"
+            android:layout_marginTop="78dp" android:layout_alignRight="@+id/et_Name"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identifiant"
+            android:id="@+id/tv_Identifiant"
+            android:layout_marginBottom="58dp" android:layout_alignBottom="@+id/et_Name"
+            android:layout_alignLeft="@+id/et_Name" android:textSize="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe"
+            android:id="@+id/tv_Password"
+            android:layout_marginTop="42dp" android:textSize="20dp"
+            android:layout_below="@+id/et_Name" android:layout_alignLeft="@+id/et_Pass"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:onClick="valider_Co"
+            android:id="@+id/b_ValidCo"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="87dp" android:singleLine="false" android:width="100dp"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Err"
+            android:layout_alignLeft="@+id/et_Pass" android:layout_above="@+id/b_ValidCo"
+            android:layout_alignRight="@+id/et_Pass" android:height="40dp"/>
+</RelativeLayout>

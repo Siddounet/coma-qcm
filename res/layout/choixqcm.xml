@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.84">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE 2 - Histologie"
+                android:id="@+id/b_Histologie" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE 2 - Embryologie"
+                android:id="@+id/b_Embryologie" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UE2 - Biologie cellulaire"
+                android:layout_gravity="center_horizontal" android:id="@+id/b_BiologieCellulaire"
+                android:width="320dp" android:onClick="chooseMat"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UE 4 - Biostatistiques"
+                android:id="@+id/b_Biostatistiques" android:layout_gravity="center_horizontal"
+                android:singleLine="false" android:width="320dp" android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE 5 - Anatomie"
+                android:id="@+id/b_Anatomie" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE 6 - Étude du médicament"
+                android:id="@+id/b_EtudeDuMedicament" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE méd - Embryologie"
+                android:id="@+id/b_MedEmbryologie" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE méd - Physiologie"
+                android:id="@+id/b_MedPhysiologie" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE méd/odonto - Spé médecine et odontologie"
+                android:id="@+id/b_MedOdonto" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE odonto - Spé odontologie"
+                android:id="@+id/b_Odonto" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UE pharma - Spé pharmacie"
+                android:id="@+id/b_Pharma" android:layout_gravity="center_horizontal" android:width="320dp"
+                android:onClick="chooseMat"/>
+    </LinearLayout>
+</LinearLayout>
