@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QCM</string>
+    <string name="app_name">Tutorat Santé Angers</string>
+    <string name="retour_matieres">Retour au choix des matières</string>
+    <string name="evolution_score">Voir votre évolution</string>
 </resources>

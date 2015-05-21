@@ -2,12 +2,12 @@
 <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent" android:background="#ffffffff">
 
     <LinearLayout
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent" android:background="#ffffffff">
 
         <LinearLayout
                 android:orientation="vertical"
@@ -16,40 +16,65 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Question "
-                    android:id="@+id/tv_Question" android:layout_gravity="center_horizontal"/>
+                    android:id="@+id/tv_Question" android:layout_gravity="center_horizontal" android:textSize="18dp"
+                    android:textColor="#ff000000"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:text="New Text"
+                    android:id="@+id/textView" android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:background="#ffc8c8c8"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/tv_Ennonce" android:layout_gravity="center_horizontal" android:textStyle="bold"/>
+                    android:id="@+id/tv_Ennonce" android:layout_gravity="center_horizontal" android:textStyle="bold"
+                    android:textSize="18dp" android:textColor="#ff000000" android:gravity="center_horizontal"
+                    android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_marginTop="10dp"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_schema" android:layout_gravity="center_horizontal"/>
             <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cb_Item1" android:checked="false"/>
+                    android:id="@+id/cb_Item1" android:checked="false" android:textColor="#ff000000"
+                    android:layout_marginTop="15dp"/>
             <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cb_Item2"/>
+                    android:id="@+id/cb_Item2" android:textColor="#ff000000"/>
             <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cb_Item3"/>
+                    android:id="@+id/cb_Item3" android:textColor="#ff000000"/>
             <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cb_Item4"/>
+                    android:id="@+id/cb_Item4" android:textColor="#ff000000"/>
             <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cb_Item5"/>
+                    android:id="@+id/cb_Item5" android:textColor="#ff000000"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passer"
+                    android:id="@+id/b_SauterQuestion" android:layout_gravity="right"
+                    android:onClick="sauterQuestion"
+                    android:minWidth="150dp"
+                    android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp" android:layout_marginRight="40dp"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Valider"
-                    android:id="@+id/b_Valider" android:layout_gravity="center_horizontal" android:width="150dp"
-                    android:onClick="valid_Question"/>
-        </LinearLayout>
+                    android:id="@+id/b_Valider" android:layout_gravity="center_horizontal"
+                    android:onClick="validQuestion"
+                    android:layout_alignParentTop="true" android:layout_toRightOf="@+id/b_SauterQuestion"
+                    android:minWidth="150dp" android:layout_marginRight="20dp"/>
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

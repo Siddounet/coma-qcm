@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_horizontal" android:background="#ffffffff">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_Name"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_Identifiant"
+            android:layout_centerHorizontal="true"
+            android:enabled="true"
+            android:cursorVisible="true" android:editable="true" android:focusable="true" android:minWidth="300dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/et_Pass"
+            android:layout_below="@+id/tv_Password"
+            android:layout_alignLeft="@+id/et_Name"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/et_Name"
+            android:enabled="true"
+            android:password="true"
+            android:editable="true"
+            android:clickable="true"
+            android:cursorVisible="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identifiant"
+            android:id="@+id/tv_Identifiant"
+            android:textSize="20dp" android:textAlignment="center"
+            android:gravity="center" android:layout_alignParentTop="false" android:layout_centerHorizontal="true"
+            android:textColor="#ff000000" android:layout_below="@+id/imageView" android:layout_marginTop="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe"
+            android:id="@+id/tv_Password"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true" android:layout_below="@+id/et_Name" android:layout_marginTop="40dp"
+            android:textColor="#ff000000"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:onClick="valider_Co"
+            android:id="@+id/b_ValidCo"
+            android:singleLine="false"
+            android:layout_below="@+id/et_Pass" android:layout_alignLeft="@+id/et_Pass"
+            android:layout_alignRight="@+id/et_Pass" android:minHeight="60dp" android:layout_marginTop="5dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Err"
+            android:height="40dp"
+            android:layout_marginTop="5dp" android:layout_below="@+id/et_Name" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" android:textColor="#ffc60d00"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"
+            android:maxWidth="200dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageView" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:src="@drawable/tutorat"/>
+</RelativeLayout>

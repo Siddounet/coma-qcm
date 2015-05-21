@@ -1,0 +1,12 @@
+com.tutorat.assocoma.QCM.BuildConfig
+com.tutorat.assocoma.QCM.PrefUtils:
+    public static final java.lang.String PREFS_LOGIN_USERNAME_KEY
+    public static final java.lang.String PREFS_LOGIN_PASSWORD_KEY
+    10:10:public PrefUtils()
+com.tutorat.assocoma.QCM.R
+com.tutorat.assocoma.QCM.R$attr
+com.tutorat.assocoma.QCM.R$drawable
+com.tutorat.assocoma.QCM.R$id
+com.tutorat.assocoma.QCM.R$layout
+com.tutorat.assocoma.QCM.R$menu
+com.tutorat.assocoma.QCM.R$string
